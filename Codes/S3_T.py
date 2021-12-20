@@ -43,6 +43,14 @@ class Matrix_5x5:
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (A) HERE
 
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (B) HERE
+    def add(self,matrix_b):
+        if self.length_matrix()==25 and matrix_b.length_matrix()==25:
+
+            for i in range(len(self.matrix)):
+        
+                 for j in range(len(self.matrix)):
+                     self.matrix[i][j]= self.matrix[i][j] + matrix_b.matrix[i][j]
+        
 
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (C) HERE
 
@@ -63,7 +71,7 @@ print(">> Matrix B:")
 matrix_b.print_matrix();
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (A) HERE
-
+matrix_a.add(matrix_b)
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (B) HERE
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (C) HERE
